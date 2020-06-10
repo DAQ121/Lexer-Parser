@@ -1,0 +1,23 @@
+文法1： 
+E→T|E+T|E-T 
+T→F|T*F|T/F 
+F→(E)|i
+输入：i+i*i
+
+文法2：
+S→AaS|BbS|d
+A→a
+B→ε|c
+输入：aabd
+输入：aaaa
+
+文法3：
+X→ABCd
+A→a|ε
+B→b|ε
+C→c|ε
+输入：abcd
+
+文法4. 非LL(1)文法
+S→AaS|a
+A→a
