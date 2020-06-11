@@ -6,6 +6,7 @@ import java.awt.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.security.PublicKey;
 import java.util.*;
 
 /**
@@ -22,10 +23,12 @@ public class Parser extends MainComplier{
     private static HashMap<String, HashSet<String>> FIRST, FOLLOW; // FIRST、FOLLOW集合
     private static String[][] FORM; // 存放预测分析表的数组，用于输出
     private static HashMap<String, String> preMap;// 存放预测分析表的map，用于快速查找
+    private int choice;
 
     //将父类的readText, outText继承过来
-    public Parser(ReadText readText, OutText outText) throws HeadlessException {
+    public Parser(ReadText readText, OutText outText, int choice) throws HeadlessException {
         super(readText, outText);
+        this.choice=choice;
     }
 
     //程序入口
@@ -42,10 +45,19 @@ public class Parser extends MainComplier{
     }
     // 从文件读文法
     public ArrayList<String> readFile(File file) {
+        BufferedReader br = null;
         outText.append("从文件读入的文法为:"+"\r\n");
         ArrayList<String> result = new ArrayList<>();
         try {
-            BufferedReader br = new BufferedReader(new FileReader("F:/grammer//a1.txt"));
+            if (choice == 1) {
+                br = new BufferedReader(new FileReader("F:/grammer//a1.txt"));
+            } else if (choice == 2){
+                br = new BufferedReader(new FileReader("F:/grammer//a2.txt"));
+            } else if (choice == 3){
+                br = new BufferedReader(new FileReader("F:/grammer//a3.txt"));
+            } else if (choice == 4){
+                br = new BufferedReader(new FileReader("F:/grammer//a4.txt"));
+            }
             String s = null;
             while ((s = br.readLine()) != null) {
                 outText.append("\t" + s+"\r\n");
