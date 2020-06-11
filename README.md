@@ -3,16 +3,21 @@
 
 个人博客网站：https://daqwt.top
 
+
+
 ## 结果图
 - **词法分析**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020061016244485.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg2MTM5OQ==,size_16,color_FFFFFF,t_70)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200611141000270.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg2MTM5OQ==,size_16,color_FFFFFF,t_70)
 - **语法分析**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200610162452406.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg2MTM5OQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200611141009521.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg2MTM5OQ==,size_16,color_FFFFFF,t_70)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200610162502631.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg2MTM5OQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200611141013882.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg2MTM5OQ==,size_16,color_FFFFFF,t_70)
+
+- **判断是否是LL（1）文法**
+ 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200611141023906.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg2MTM5OQ==,size_16,color_FFFFFF,t_70)
 
 ## 概述
 - **词法分析：** 根据输入的字符序列，将字符序列转换为单词`Token`序列，识别每个字符，并给出相应的类型。
@@ -35,8 +40,13 @@
 
 ## 使用说明
 
-- 在E盘下建一个`a1.txt`文件，里面存放相应的文法，我在代码包中也附带了一个名为`文法测试.txt`的文件，里面有四种文法以及需要输入的字符串示例，任选一种，填入你的`a1.txt`中。
+- 将`grammer`文件夹放入F盘下，我在代码包中也附带了一个名为`文法测试.txt`的文件，里面有对应的四种文法以及需要输入的字符串示例。
 - 运行Main主函数，即可...
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200610163550344.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg2MTM5OQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200611141035997.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg2MTM5OQ==,size_16,color_FFFFFF,t_70)
+
+
+
+
+
 
