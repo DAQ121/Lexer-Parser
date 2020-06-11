@@ -1,0 +1,3 @@
+S→AaS|BbS|d
+A→a
+B→ε|c
